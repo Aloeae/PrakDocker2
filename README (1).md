@@ -21,7 +21,8 @@ cd docker-practice
 # Сборка образа
 docker build -t practice-image:1.0 .
 ```
-<img width="906" height="216" alt="image" src="https://github.com/user-attachments/assets/f8282d71-2991-4df4-9698-478052f8e42f" />
+<img width="709" height="51" alt="Снимок экрана 2025-12-26 095142" src="https://github.com/user-attachments/assets/f4771fda-2020-493c-9ee0-1b7f77eca08f" />
+
 
 ### Задание 1: Вывод логов в файл
 
@@ -41,7 +42,7 @@ cat /tmp/container_logs.txt
 # Очистка
 docker rm practice-container-1
 ```
-<img width="974" height="651" alt="image" src="https://github.com/user-attachments/assets/31f047fd-7348-4f07-bf86-f5d2cea2c815" />
+<img width="1690" height="814" alt="Снимок экрана 2025-12-26 095917" src="https://github.com/user-attachments/assets/6ccc3079-a875-42b8-8b37-f397d9c00a29" />
 
 ### Задание 2: Проверка docker-stats
 
@@ -58,7 +59,8 @@ docker stats --no-stream practice-container-2 > /tmp/container_stats.txt
 # После завершения контейнера
 docker rm practice-container-2
 ```
-<img width="974" height="208" alt="image" src="https://github.com/user-attachments/assets/afed0857-e9e8-4a49-bf54-8a6d21af445f" />
+<img width="1718" height="159" alt="Снимок экрана 2025-12-26 100038" src="https://github.com/user-attachments/assets/d108ddc9-64fa-4667-bc8c-3283eb0bbaff" />
+
 
 ### Задание 3: Ограничение ресурсов
 
@@ -79,9 +81,7 @@ docker update --memory=512m practice-limited
 docker stop practice-limited
 docker rm practice-limited
 ```
-<img width="974" height="200" alt="image" src="https://github.com/user-attachments/assets/bda226dc-3106-4616-af26-9d95c7c24d7f" />
-
-<img width="974" height="164" alt="image" src="https://github.com/user-attachments/assets/9f734cb1-8c0c-4016-b181-3b9f305a4945" />
+<img width="1574" height="397" alt="Снимок экрана 2025-12-26 100255" src="https://github.com/user-attachments/assets/cdac469f-d743-4cd0-ba8d-f85c5324c36d" />
 
 ### Задание 4: Экспорт в tar
 
@@ -104,7 +104,8 @@ tar -tf /tmp/container_export.tar | head -20
 # Очистка
 docker rm practice-export
 ```
-<img width="974" height="622" alt="image" src="https://github.com/user-attachments/assets/f32d669d-ca7c-41e7-b01e-2dffd4062447" />
+<img width="1606" height="821" alt="Снимок экрана 2025-12-26 100720" src="https://github.com/user-attachments/assets/4fbd9623-f8ef-405d-962d-4fbf75bf15e8" />
+
 
 ### Задание 5: Импорт из tar
 
@@ -127,9 +128,8 @@ docker stop restored-from-tar
 docker rm restored-from-tar
 docker rmi restored-practice:1.0
 ```
-<img width="974" height="730" alt="image" src="https://github.com/user-attachments/assets/f8c5b99e-9a97-4f34-ad39-40688f60f16e" />
+<img width="1220" height="939" alt="Снимок экрана 2025-12-26 101025" src="https://github.com/user-attachments/assets/52144474-1388-4606-b136-4dbcc6b7ce34" />
 
-<img width="974" height="364" alt="image" src="https://github.com/user-attachments/assets/573ed034-3af6-4002-93f3-92a87e1628ac" />
 
 ---
 
